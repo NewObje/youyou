@@ -1,0 +1,6 @@
+### Get request with parameter
+
+GET http://localhost:31001/config/findbyid/5a791725dd573c3574ee333f
+Accept: application/json
+
+###

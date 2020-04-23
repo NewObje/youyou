@@ -1,0 +1,20 @@
+server:
+  port: 31002
+spring:
+  application:
+    name: yo-cms-client
+  data:
+    mongodb:
+      uri: mongodb://192.168.204.130:27017
+      database: test
+  rabbitmq:
+    host: 192.168.204.130
+    port: 5672
+    username: lhy
+    password: yhl
+    virtual-host: /
+yo:
+  mq:
+    #cms客户端监控的队列名称（不同的客户端监控的队列不能重复）
+    queue: queue_cms_postpage_01 #监听队列
+    routingKey: 5e7d81f14bb8f147dca0a597 #门户站点ID

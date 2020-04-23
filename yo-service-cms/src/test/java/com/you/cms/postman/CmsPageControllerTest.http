@@ -1,0 +1,48 @@
+### Send POST request with json body
+POST http://localhost:31001/cms/listPages/1/20
+Content-Type: application/json
+
+{
+  "pageAliase": "轮播图"
+}
+
+###
+
+PUT http://localhost:31001/cms/updatePage/5e5670024bb8f1ab841f62d5
+Content-Type: application/json
+
+{
+  "pageId": "5e5670024bb8f1ab841f62d5",
+  "siteId": "100000xxx2",
+  "pageName": "assa",
+  "pageAliase": "asasa",
+  "pageWebPath": "asasasasas",
+  "pagePhysicalPath": "asa",
+  "templateId": "5a962b52b00ffc514038faf7"
+}
+
+###
+
+POST http://localhost:31001/cms/insert
+Content-Type: application/json
+
+{
+  "siteId" : "100ss02",
+  "pageName" : "asssa",
+  "pageAliase" : "asaassa",
+  "pageWebPath" : "asasasasasas",
+  "pagePhysicalPath" : "asssa",
+  "templateId" : "5a962b52b00ffc514038faf7",
+}
+
+###
+
+DELETE http://localhost:31001/cms/deleteById/5e5a73404bb8f1ac20406c33
+Accept: application/json
+
+###
+
+GET http://localhost:31001/cms/findPage/5a96114fb00ffc4b44f63e06
+Accept: application/json
+
+###

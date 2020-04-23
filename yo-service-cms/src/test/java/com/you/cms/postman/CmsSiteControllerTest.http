@@ -1,0 +1,45 @@
+### Get request with parameter
+
+GET http://localhost:31001/site/list
+Accept: application/json
+
+###
+
+GET http://localhost:31001/site/getbyid/5a751fab6abb5044e0d19ea1
+Accept: application/json
+
+###
+
+### Send POST request with json body
+
+POST http://localhost:31001/site/add
+Content-Type: application/json
+
+{
+  "siteName": "ss",
+  "siteDomain": "http://locat",
+  "sitePort": "8888",
+  "siteWebPath": "/",
+  "siteCreateTime": "2018-02-03T02:34:19.113+0000"
+}
+
+###
+
+POST http://localhost:31001/site/update
+Content-Type: application/json
+
+{
+  "siteId": "5e5bc2e34bb8f1c53c8f6171",
+  "siteName": "门户主站",
+  "siteDomain": "http://localhossssst",
+  "sitePort": "80",
+  "siteWebPath": "/",
+  "siteCreateTime": "2018-02-03T02:34:19.113+0000"
+}
+
+###
+
+GET http://localhost:31001/site/delete/5e5bc2e34bb8f1c53c8f6171
+Accept: application/json
+
+###

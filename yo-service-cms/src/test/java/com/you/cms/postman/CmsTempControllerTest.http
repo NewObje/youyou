@@ -1,0 +1,9 @@
+### Send POST request with json body
+POST http://localhost:31001/temp/listtemps
+Content-Type: application/json
+
+{
+
+}
+
+###
